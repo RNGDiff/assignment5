@@ -1,22 +1,23 @@
-body,h1,h2,h3,h4,h5,h6,p,span,ul,li{
+h1,h2,h3,h4,h5,h6,p,span,ul,li{
     margin: 0;
     padding: 0;
 
 }
 @font-face {
-    font-family: 'Roboto Flex';
-    src: url("assets/Roboto_Flex/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf") format('truetype');
-    font-weight: 100 1000;
-    font-stretch: 25% 151%;
+    font-family: 'Roboto';
+    src: url("../assets/Roboto/Roboto-VariableFont_wdth,wght.ttf");
+    font-weight: 400;
+
 }
+html { 
+    font-size: 16px; 
+}
+
 body{
-    font-family: 'Roboto Flex', sans-serif;
-    font-weight: 100;
-    font-variation-settings: 
-    "wght" 400,
-    "wdth" 100,
-    "opsz" 14;
-    color: black;    
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 /* ! Date and time */
@@ -30,9 +31,10 @@ body{
     margin: 5px 20px;
     border-radius: 5px;
     background-color: #82a274;
+    
 }
 .title{
-    flex-grow: 1;
+    flex: 1;
     min-width: 150px;
     text-align: center;
     font-size: 1.5rem;
@@ -40,9 +42,12 @@ body{
 }
 .show-all{
     background-color: #a8c5b6;
-    padding: 10px 16.5px;
+    padding: 10px;
     box-shadow: 0px 0px 10px 1px black;
-    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 900;
 }
 
 .user-data-container{
@@ -50,10 +55,31 @@ body{
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    padding: 25px 25px;
+    padding: 25px;
     margin: 20px;
     border-radius: 5px;
     background-color: #a8c5b6;
+}
+.extra-data-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0px 0px 10px 45px;
+    border-radius: 5px;
+    background-color: #96afa2;
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    transition: opacity 1s ease-in, padding 1s ease;
+
+}
+.active{
+    margin: 0px 0px 30px 45px;
+    opacity: 1;
+    max-height: 100%;
+    padding: 15px;
+
 }
 h3 {
     flex: 1;
@@ -64,15 +90,58 @@ button{
     background-color: #82a274;
     padding: 10px;
     box-shadow: 0px 0px 10px 1px black;
-    color: black;    
+    color: black;
+    cursor: pointer;
 
 }
 .more-btn{
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 900;
+
 }
-.hidden{
-    display: none;
+
+
+@media (max-width:1550px) {
+    .user-data-container{
+        padding: 20px;
+    }
+    .title{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
 }
-.active{
-    display: block;
+    @media (max-width:1320px) {
+
+        .title{
+            font-size: 1.4rem;
+        }
+        h3{
+            font-size: 1rem;
+        }
+        button{
+            padding: 8px;
+        }
+        .show-all{
+            font-size: 1rem;
+            padding: 8px;
+        }
+    
+}
+@media (max-width:1230px) {
+    .title{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    button{
+        padding: 8px;
+    }
+    .show-all{
+        font-size: 1rem;
+        padding: 8px;
+    }
 }
