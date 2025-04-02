@@ -14,10 +14,6 @@ function displayNames(data){
         const extraDatacontainer = document.createElement('div');
         extraDatacontainer.classList.add('extra-data-container');
 
-        // const titleContainer = document.createElement('div');
-        // titleContainer.classList.add('title-container');
-
-
         // !CREATE BUTTONS
         const moreBtn = document.createElement('button');
         moreBtn.classList.add('more-btn');
@@ -31,12 +27,6 @@ function displayNames(data){
         const phoneElement = document.createElement('h3');
         const companyElement = document.createElement('h3');
 
-        // const titleName = document.createElement('h3');
-        // const titleUsername  = document.createElement('h3');
-        // const titleEmail  = document.createElement('h3');
-        // const titleCity  = document.createElement('h3');
-        // const titlePhone  = document.createElement('h3');
-        // const titleCompany  = document.createElement('h3');
 
 
         // !CLASSES
@@ -45,12 +35,7 @@ function displayNames(data){
         companyElement.classList.add('hidden');
 
         // ~ ASSIGN TEXTCONTENT TO CORRESPONDING DATA
-        // nameElement.textContent = user.name;
-        // usernameElement.textContent = user.username;
-        // emailElement.textContent = user.email;
-        // cityElement.textContent = user.address.city;
-        // phoneElement.textContent = user.phone;
-        // companyElement.textContent = user.company.name;
+
         nameElement.textContent = `Name: ${user.name}`;
         usernameElement.textContent = `Username: ${user.username}`;
         emailElement.textContent = `Email: ${user.email}`;
