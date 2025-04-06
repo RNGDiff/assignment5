@@ -231,7 +231,7 @@ button{
         font-size: 0.8rem;
     }
 }
-@media (max-width:440px) {
+@media (max-width:555px) {
     
     .user-data-container{
         display: flex;
