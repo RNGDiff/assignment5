@@ -231,3 +231,60 @@ button{
         font-size: 0.8rem;
     }
 }
+@media (max-width:440px) {
+    
+    .user-data-container{
+        display: flex;
+        max-width: 100%;
+        border-radius: 5px;
+        background-color: #a8c5b6;
+        flex-wrap: wrap;
+    }
+    .user-data-container>h3{
+        text-align: start;
+    }
+    .user-data-container>button{
+        margin-top: 10px;
+        flex-grow: 1;
+    }
+    .extra-data-container{
+        display: block;
+        max-width: 100%;
+        margin: 0px 0px 0px 45px;
+        border-radius: 5px;
+        background-color: #96afa2;
+        opacity: 0;
+        max-height: 0;
+        padding: 0;
+        transition: opacity 1s ease-in, padding 1s ease;
+    }
+    .extra-data-container>h3{
+        margin: 5px 0px;
+
+    }
+    .active{
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0px 0px 30px 45px;
+        opacity: 1;
+        max-height: 100%;
+        padding: 15px;
+    
+    }
+
+    .title{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    button{
+        padding: 1px;
+        font-size: 0.6rem;
+
+    }
+    .show-all{
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+}
